@@ -14,7 +14,7 @@ set(CMAKE_CXX_FLAGS "-std=c++17 -O2 -g")
 
 set(SOURCE_FILES
     main.cpp
-    app.hpp)
+    app.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 

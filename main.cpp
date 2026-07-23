@@ -11,7 +11,7 @@
 #include <glm/vec4.hpp>
 #include <glm/mat4x4.hpp>
 
-#include "app.hpp"
+#include "app.cpp"
 
 int main(int argc, char* argv[]) {
     App app;

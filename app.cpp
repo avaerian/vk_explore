@@ -70,6 +70,11 @@ class App {
             createInfo.enabledExtensionCount = static_cast<uint32_t>(exts.size());
             createInfo.ppEnabledExtensionNames = exts.data();
 
+            // FOR DEBUG
+            for(auto it = exts.begin(); it != exts.end(); it++) {
+                fprintf(stdout, "Extension: %s\n", *it);
+            }
+
             if(vkCreateInstance(&createInfo, nullptr, &vk) != VK_SUCCESS) {
                 throw std::runtime_error("Failed to create Vulkan instance");
             } 
